@@ -137,7 +137,7 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2rem ;
   }
 }
 
@@ -2848,7 +2848,7 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #0f0f0f;
   --bs-btn-bg: #64a19d;
   --bs-btn-border-color: #64a19d;
   --bs-btn-hover-color: #fff;
@@ -8158,7 +8158,7 @@ textarea.form-control-lg {
 }
 
 .text-uppercase {
-  text-transform: uppercase !important;
+  text-transform:var(--bs-accordion-active-bg) !important;
 }
 
 .text-capitalize {
@@ -8242,12 +8242,27 @@ textarea.form-control-lg {
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 100) !important;
 }
+
+.text-white-500{ 
+  --bs-text-opacity: 1;
+  color: rgba(231, 151, 3 ,1) !important;
+
+
+}
+
+.text-white-5000{ 
+  --bs-text-opacity: 1;
+  color: rgba(255,255,255,1 ) !important;
+
+
+}
+
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255 , 11) !important;
 }
 
 .text-reset {
@@ -10993,7 +11008,7 @@ body {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #000;
+  color: #c31919;
   font-weight: 700;
   padding: 0.9rem 0;
 }
@@ -11006,7 +11021,7 @@ body {
   outline: none;
   background-color: transparent;
 }
-@media (min-width: 99px) {
+@media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -11016,15 +11031,15 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 255);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 255);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 255);
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11071,7 +11086,7 @@ body {
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/ccvv.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
@@ -11080,14 +11095,14 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255 , 1));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
-  font-size: 1rem;
+  font-size: rem;
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
